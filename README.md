@@ -1,9 +1,102 @@
-**Задание 1** (Exercise1) <br/>
-user-service -- Nest js, PostgreSQL, TypeORM  
-user-activity-service -- Express js, PostgreSQL, TypeORM
+<h1>**Задание 1** (Exercise1)</h1>
 
-**Задание 2** (Exercise2) <br/>
-user-service -- Nest js, PostgreSQL, TypeORM
+<h2>user-service</h2> 
+
+create user
+![image](https://github.com/Raiver103/EffectiveMobile.Exercises/assets/80199038/be646a14-d295-414f-8007-7fe750dd2fd6)
+update user
+![image](https://github.com/Raiver103/EffectiveMobile.Exercises/assets/80199038/51fa2a4a-eee9-4e24-bc2a-9b3472abebe1)
+get users
+![image](https://github.com/Raiver103/EffectiveMobile.Exercises/assets/80199038/2d904848-94b6-4ba8-926d-6185fa5d6eba)
+
+Technical tools
+* Nest js
+* PostgreSQL
+* TypeORM
+
+Installation
+
+```bash
+$ cd Exercise1
+$ cd user-service
+$ npm install
+```
+
+Running the app
+
+```bash
+$ cd Exercise1
+$ cd user-service
+$ node src/app.js
+```
+
+<h2>user-activity-service</h2>
+
+![image](https://github.com/Raiver103/EffectiveMobile.Exercises/assets/80199038/7d44a304-7587-4883-bfab-488b738d36a5)
+
+Technical tools
+* Express js
+* PostgreSQL
+* TypeORM
+
+Installation
+
+```bash
+$ cd Exercise1
+$ cd user-activity-service
+$ npm install
+```
+
+Running the app
+
+```bash
+
+$ cd Exercise1
+$ cd user-activity-service
+
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
+
+<h1>**Задание 2** (Exercise2)</h1>
+
+<h2>user-service</h2>
+
+![image](https://github.com/Raiver103/EffectiveMobile.Exercises/assets/80199038/6c4dd575-37e6-4b52-b4f4-71928c1c3bc4)
+
+Technical tools
+* Nest js
+* PostgreSQL
+* TypeORM
+
+Installation
+
+```bash
+$ npm install
+```
+
+Running the app
+
+```bash
+
+$ cd Exercise2
+$ cd user-service
+
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
 
 <h1>Задания:</h1>
   
