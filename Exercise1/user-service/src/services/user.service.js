@@ -7,7 +7,7 @@ class UserService {
     const userRepository = getRepository(User);
     const user = userRepository.create(userData);
     await userRepository.save(user);
-    await axios.post("http://localhost:2001/history", { action: "create", user });
+    await axios.post("http://localhost:2001/user-activity", { action: "create", user });
     return user;
   }
 
@@ -15,7 +15,7 @@ class UserService {
     const userRepository = getRepository(User);
     await userRepository.update(id, userData);
     const user = await userRepository.findOne({ where: { id } });
-    await axios.post("http://localhost:2001/history", { action: "update", user });
+    await axios.post("http://localhost:2001/user-activity", { action: "update", user });
     return user;
   }
 

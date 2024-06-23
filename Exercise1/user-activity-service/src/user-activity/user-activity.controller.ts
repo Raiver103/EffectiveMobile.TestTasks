@@ -4,11 +4,11 @@ import { UserActivityService } from './user-activity.service';
 @Controller('user-activity')
 export class UserActivityController {
 
-  constructor(private readonly historyService: UserActivityService) {}
+  constructor(private readonly userActivityService: UserActivityService) {}
 
   @Post()
   async createHistory(@Body() body: { action: string; user: { id: number } }) {
-    return this.historyService.createHistory(body.action, body.user.id);
+    return this.userActivityService.createHistory(body.action, body.user.id);
   }
 
   @Get()
@@ -17,6 +17,6 @@ export class UserActivityController {
     @Query('page') page: number = 1,
     @Query('limit') limit: number = 10,
   ) {
-    return this.historyService.findAll(userId, page, limit);
+    return this.userActivityService.findAll(userId, page, limit);
   }
 }

@@ -7,17 +7,17 @@ import { UserActivity } from './user-activity.entity';
 export class UserActivityService {
   constructor(
     @InjectRepository(UserActivity)
-    private readonly historyRepository: Repository<UserActivity>,
+    private readonly userActivityRepository: Repository<UserActivity>,
   ) {}
 
   async createHistory(action: string, userId: number) {
-    const history = this.historyRepository.create({ action, userId });
-    return this.historyRepository.save(history);
+    const userActivity = this.userActivityRepository.create({ action, userId });
+    return this.userActivityRepository.save(userActivity);
   }
  
   async findAll(userId?: number, page: number = 1, limit: number = 10) {
     const skip = (page - 1) * limit;
-    return this.historyRepository.find({
+    return this.userActivityRepository.find({
       where: { userId },
       skip,
       take: limit,

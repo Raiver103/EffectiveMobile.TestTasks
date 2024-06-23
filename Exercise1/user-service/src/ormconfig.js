@@ -4,7 +4,7 @@ module.exports = {
   port: 5432,
   username: "postgres",
   password: "raiver031105",
-  database: "EffectiveMobile.historydb",
+  database: "EffectiveMobile.ex1userdb",
   entities: [__dirname + "/models/*.js"],
   synchronize: true,
 };
