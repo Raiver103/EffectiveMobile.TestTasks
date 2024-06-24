@@ -10,7 +10,7 @@ get users
 ![image](https://github.com/Raiver103/EffectiveMobile.Exercises/assets/80199038/2d904848-94b6-4ba8-926d-6185fa5d6eba)
 
 Technical tools
-* Nest js
+* Express js
 * PostgreSQL
 * TypeORM
 
@@ -35,7 +35,7 @@ $ node src/app.js
 ![image](https://github.com/Raiver103/EffectiveMobile.Exercises/assets/80199038/7d44a304-7587-4883-bfab-488b738d36a5)
 
 Technical tools
-* Express js
+* Nest js
 * PostgreSQL
 * TypeORM
 
