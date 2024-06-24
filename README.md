@@ -98,6 +98,14 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+Seed data
+
+```bash
+$ cd Exercise2
+$ cd user-service
+$ ts-node src/user/user.seed.ts
+```
+
 <h1>Задания:</h1>
   
 **Задание 1**  
